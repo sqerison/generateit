@@ -11,3 +11,12 @@ jobs:
       - run:
           name: Print the Current Time
           command: env
+      - run:
+          name: Print the Current Time
+          command: apt-get update
+      - run:
+          name: Print the Current Time
+          command: apt-get install curl -y
+      - run:
+          name: Print the Current Time
+          command: curl https://api.github.com/repos/sqerison/generateit/pulls?base=master
