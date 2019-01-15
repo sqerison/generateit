@@ -13,4 +13,6 @@ jobs:
           command: env
       - run:
           name: Print the Current Time
-          command: curl https://api.github.com/repos/sqerison/generateit/merges
+          command: |
+	    apt-get update ; apt-get install curl -y; \
+            curl https://api.github.com/repos/sqerison/generateit/merges
