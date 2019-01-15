@@ -13,4 +13,4 @@ jobs:
           command: env
       - run:
           name: Print the Current Time
-          command: echo zbc
+          command: echo zbc ska
